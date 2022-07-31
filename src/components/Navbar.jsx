@@ -37,7 +37,7 @@ export default function Navbar() {
             <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
-       <Link to="/contect"> <button>Connect</button></Link>
+       <a href="#contact"> <button>Connect</button></a>
       </Nav>
       <ResponsiveNav state={navbarState}>
         <ul>
@@ -58,7 +58,12 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#testimonials" onClick={() => setNavbarState(false)}>
-              Testimonials
+              Testimonials 
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => setNavbarState(false)}>
+              Contact
             </a>
           </li>
         </ul>

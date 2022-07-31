@@ -7,8 +7,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
-import Contect from './components/Contect'
+import Contact from './components/Contact'
 import {Routes,Route} from "react-router-dom"
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 export default function App() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -24,6 +26,7 @@ export default function App() {
         #services,
         #recommend,
         #testimonials,
+        #contact,
         footer
         `,
       {
@@ -40,10 +43,10 @@ export default function App() {
       <Services />
       <Recommend />
       <Testimonials />
+      <Contact/>
       <Footer />
-      <Routes>
-        <Route path="/contect" element={<Contect/>}/>
-      </Routes>
+      <Signup/>
+      <Login/>
     </div>
   );
 }

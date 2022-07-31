@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import styled from "styled-components";
 const Contact = () => {
   const [userData, setUserData] = useState({
     firstName: "",
@@ -62,6 +62,7 @@ const Contact = () => {
 
   return (
     <>
+    <Section id="contact">
       <section className="contactus-section">
         <div className="container">
           <div className="row">
@@ -69,7 +70,7 @@ const Contact = () => {
               <div className="row">
                 <div className="contact-leftside col-12 col-lg-5">
                   <h1 className="main-heading fw-bold">
-                    Connect With Our <br /> Sales Team.
+                    Connect With Our <br /> Travelling Team.
                   </h1>
                   <p className="main-hero-para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -77,7 +78,7 @@ const Contact = () => {
                   </p>
                   <figure>
                     <img
-                      src="./images/hero1.jpg"
+                      src="./assets/hero.png"
                       alt="contatUsImg"
                       className="img-fluid"
                     />
@@ -172,7 +173,7 @@ const Contact = () => {
                       <label
                         class="form-check-label"
                         className="main-hero-para">
-                        I agree that the thapatechnicalpay may contact me at the
+                        I agree that the teem may contact me at the
                         email address or phone number above
                       </label>
                     </div>
@@ -190,8 +191,14 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      </Section>
     </>
   );
 };
 
 export default Contact;
+
+
+const Section =styled.section`
+margin: 5rem 0;
+`;
